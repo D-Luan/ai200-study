@@ -1,0 +1,52 @@
+# ── Segredos e ambiente (nunca commitar) ─────────────────────
+.env
+.env.*
+!.env.example          # template com placeholders, esse SIM vai pro repo
+*.pem
+*.key
+*.pfx
+secrets.json
+credentials.json
+
+# ── Python ────────────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.venv/
+venv/
+.python-version
+.mypy_cache/
+.ruff_cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# ── Azure Functions ───────────────────────────────────────────
+local.settings.json    # contém connection strings em claro
+.python_packages/
+.func
+
+# ── Azure CLI / tooling local ────────────────────────────────
+.azure/
+
+# ── Jupyter ───────────────────────────────────────────────────
+.ipynb_checkpoints/
+
+# ── VS Code ───────────────────────────────────────────────────
+.vscode/*
+!.vscode/settings.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+# ── SO ────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ── Logs e temporários ────────────────────────────────────────
+*.log
+tmp/
